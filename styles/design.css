@@ -14,7 +14,7 @@ body {
 
 /* Wrapper */
 .wrapper {
-  background: linear-gradient(90deg, rgba(90,81,237,1) 0%, rgba(116,116,255,1) 3%, rgba(0,212,255,1) 36%);
+  background: #fff;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -31,13 +31,12 @@ body {
 .nav-header ul{
   display: flex;
   flex-direction: row;
-  gap: 9rem;
+  gap: 5rem;
 }
 
 .nav-header ul li {
   list-style: none;
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 17px;
 }
 
 .nav-header ul li a {
@@ -56,9 +55,8 @@ body {
   background: #0055FF;
   border: solid 2px #0055FF;
   border-radius: 25px;
-  border-width: 11px;
+  border-width: 6px;
   color: #fff;
-  font-weight: 500;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 15px;
 }
