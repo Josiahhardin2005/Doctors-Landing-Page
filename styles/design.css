@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -39,11 +39,12 @@ body {
 }
 
 .nav-header ul li a {
-  color: #fff;
+  color: #000611;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .header-container img {
@@ -53,14 +54,18 @@ body {
 }
 
 .header-container button {
-  background-color: #0055FF;
-  background: #0055FF;
-  border: solid 2px #0055FF;
-  border-radius: 25px;
+  background-color: #003dbb;
+  background: #003dbb;
+  border: solid 2px #003dbb;
   border-width: 6px;
   color: #fff;
   margin-right: 10px;
   font-size: 15px;
+  white-space: nowrap;
+}
+
+.header-container button:hover {
+  cursor: pointer;
 }
 
 .header-container img,
@@ -71,28 +76,80 @@ body {
 
 /* intro */
 
-/* .intro img {
+.intro {
  width: 100%;
  height: auto;
- position: relative;
- top: -100px;
- z-index: 0;
-} */
-
+ display: flex;
+} 
 
 
 .background-img {
   background: url(../images/create\ an\ image\ 2214cab3-a5dd-4adb-aef9-e1e66da8ef2e.png) center / cover no-repeat;
-  width: 100%;
   min-height: 600px;
+  min-width: 1440px;
 }
 
- .background-img .content {
+.background-img .content {
   position: absolute; 
   top: 0; 
   background: rgb(0, 0, 0) ; 
-  background: rgba(21, 43, 168, 0.5); 
+  background: rgba(87, 110, 238, 0.5); 
   color: #f1f1f1;
   width: 100%; 
   min-height: 600px; 
 }  
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text  {
+  margin-top: 2rem;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 2.5rem;
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+.intro-text h1 {
+  font-size: 8vh;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #000611;
+}
+
+.intro-text span {
+  font-weight: 600;
+  color: #003dbb;
+}
+
+.intro-text p {
+  position: relative;
+  left: -5px;
+  color: #000611;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.intro-text button {
+  margin-top: 2rem;
+  background-color: #003dbb;
+  background: #003dbb;
+  border: solid 2px #003dbb;
+  border-width: 15px;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.intro-text button:last-child {
+  margin-left: 2rem;
+}
+
+.intro-text button:hover {
+  cursor: pointer;
+}
