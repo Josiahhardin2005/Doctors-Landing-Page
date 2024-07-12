@@ -28,6 +28,31 @@ body {
   justify-content: space-between;
 }
 
+.header-container p {
+  color: #000611;
+}
+
+.header-container #health-part{
+  color: #003dbb;
+}
+
+.header-container #first-part {
+  margin-top: 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.header-container #medical-center {
+  font-size: 13px;
+  position: relative;
+  top: -8px;
+  letter-spacing: 1px;
+}
+
+.header-container p {
+  margin-left: 1rem;
+}
+
 .nav-header ul{
   display: flex;
   flex-direction: row;
