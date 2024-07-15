@@ -30,6 +30,8 @@ body {
 
 .header-container p {
   color: #000611;
+  margin-left: 1rem;
+  white-space: nowrap;
 }
 
 .header-container #health-part{
@@ -47,10 +49,7 @@ body {
   position: relative;
   top: -8px;
   letter-spacing: 1px;
-}
-
-.header-container p {
-  margin-left: 1rem;
+  font-weight: 300;
 }
 
 .nav-header ul{
@@ -72,17 +71,11 @@ body {
   white-space: nowrap;
 }
 
-.header-container img {
-  width: 110px;
-  height: 100px;
-  margin-left: 10px;
-}
-
 .header-container button {
   background-color: #003dbb;
   background: #003dbb;
   border: solid 2px #003dbb;
-  border-width: 6px;
+  border-width: 8px;
   color: #fff;
   margin-right: 10px;
   font-size: 15px;
@@ -173,8 +166,88 @@ body {
 
 .intro-text button:last-child {
   margin-left: 2rem;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .intro-text button:hover {
   cursor: pointer;
+}
+
+/* Why Choose Us */
+
+.our-advantages {
+  display: flex;
+  text-align: center;
+}
+
+/* .boxes {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-direction: row;
+} */
+
+.boxes {
+  float: left;
+  border: solid 5px #fff;
+  box-shadow: 9px 6px 6px -3px rgb(222, 240, 250);
+  width: 220px;
+  height: 175px;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.boxes img {
+  width: 50px;
+  height: 50px;
+  background-color: #a9c5fd;
+  background: #a9c5fd;
+  border: solid 2px #a9c5fd;
+  border-radius: 5px;
+  border-width: 12px;
+  box-shadow: 3px -4px 0px 0px rgba(235,235,235,1);
+}
+.boxes p:first-of-type {
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.boxes p:nth-child(3) {
+  font-size: 12px;
+  font-weight: 300;
+  color: #737070;
+  flex-wrap: wrap;
+}
+
+.boxes p {
+  margin-top: 0.2rem;
+}
+
+.our-advantages::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.our-advantages section p:first-child {
+  margin-top: 2rem;
+  color: #90b0f2;
+  position: relative;
+  bottom: -6px;
+} 
+
+.our-advantages section h2 {
+  margin-bottom: 2rem;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.our-advantages section p:first-child,
+.our-advantages section h2 {
+  position: relative;
+  right: -80px;
 }
