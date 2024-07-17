@@ -80,20 +80,25 @@
       </section>
 
       <section>
+        
         <div class="info-form">
+          <img src="../images/create an image eed801dd-bc19-4654-b00e-7820841179a8.png" alt="" width="1366" height="768">
           <form>
             <fieldset>
               <legend>Make an appointment</legend>
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" required placeholder="First Name">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" required placeholder="Last Name">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone Number">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required placeholder="Email Address">
-              <label for="message">Enter Message</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter a message"></textarea>
+              <p>Fill out your contact information in the form below and our administrator will contact you.</p>
+              <p>inputs with an * are required</p>
+
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" name="fname" required placeholder="">
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" name="lname" required placeholder="">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="">
+              <label for="email">Email Address*</label>
+              <input type="email" id="email" name="email" required placeholder="">
+              <label for="message">Enter Message:</label>
+              <textarea name="message" id="message" cols="29" rows="4" placeholder=""></textarea>
               <input type="submit" value="Submit">
             </fieldset>
           </form>
@@ -127,12 +132,12 @@
 
         <div class="footer-container">
           <ul class="footer-nav">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Doctors</li>
-            <li>Privacy Policy</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Doctors</a></li>
+            <li><a href="">Privacy Policy</a></li>
           </ul>
 
           <button>Make Appointment</button>

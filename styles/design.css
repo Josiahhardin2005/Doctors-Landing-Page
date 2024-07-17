@@ -240,8 +240,76 @@ body {
   font-weight: 400;
 }
 
-/* .our-advantages section p:first-child,
-.our-advantages section h2 {
+/* form styling */
+
+.info-form {
+  display: flex;
+}
+
+
+.info-form img {
+  width: 550px;
+  height: 615px;
+  border-radius: 8px;
+}
+
+.info-form p {
+  color: #fff;
+}
+
+.info-form form {
+  margin-top: 1rem;
+  width: 500px;
+  min-height: 615px;
+  padding: 25px 35px;
+  border-radius: 7px;
+  background-color: #003dbb;
+  /* text-align: center; */
   position: relative;
-  right: -80px;
-} */
+  right: -170px;
+  padding-bottom: 40px;
+} 
+
+.info-form form fieldset input:last-child {
+  background-color: #000611;
+  border: solid #000611;
+  border-radius: 3px;
+  color: #fff;
+  border-width: 8px;
+  padding-right: 80px;
+  padding-left: 85px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.info-form form fieldset input {
+  /* margin-top: 1rem; */
+  border-radius: 5px;
+  padding: 10px;
+  padding-right: 160px; 
+  padding-left: 15px;
+  padding-top: 10px; 
+  border: solid rgb(42, 41, 41) 2px;
+  margin-bottom: 0.5rem;
+}
+
+.info-form form fieldset textarea {
+  /* margin-top: 1rem; */
+  resize: none;
+}
+
+.info-form form fieldset legend {
+  color: #fff;
+}
+
+.info-form form label {
+  /* display: none; */
+  color: #fff;
+  
+}
+
+.info-form fieldset {
+ border: none;
+}
