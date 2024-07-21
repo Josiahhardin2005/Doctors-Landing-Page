@@ -229,7 +229,7 @@ body {
 
 .our-advantages section p:first-child {
   margin-top: 2rem;
-  color: #90b0f2;
+  color: #6075a3;
   position: relative;
   bottom: -6px;
 } 
@@ -244,70 +244,106 @@ body {
 
 .info-form {
   display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 
 .info-form img {
-  width: 550px;
+  width: 570px;
   height: 615px;
   border-radius: 8px;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+  position: relative;
+  right: -81px;
 }
 
 .info-form p {
-  color: #fff;
+  color: #716f6f;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .info-form form {
   margin-top: 1rem;
-  width: 500px;
-  min-height: 615px;
+  width: 520px;
+  height: 620px;
   padding: 25px 35px;
   border-radius: 7px;
-  background-color: #003dbb;
+  background-color: #eff4fd;
   /* text-align: center; */
   position: relative;
-  right: -170px;
+  right: -210px;
   padding-bottom: 40px;
+  /* border: solid rgb(42, 41, 41) 2px; */
 } 
 
 .info-form form fieldset input:last-child {
-  background-color: #000611;
-  border: solid #000611;
+  background-color: #bed2f5;
+  border: solid #bed2f5;
   border-radius: 3px;
-  color: #fff;
+  color: #0e60ed;
   border-width: 8px;
-  padding-right: 80px;
-  padding-left: 85px;
+  padding-right: 171px;
+  padding-left: 190px;
   padding-top: 8px;
   padding-bottom: 5px;
   letter-spacing: 1px;
   margin-top: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .info-form form fieldset input {
   /* margin-top: 1rem; */
   border-radius: 5px;
   padding: 10px;
-  padding-right: 160px; 
+  padding-right: 185px; 
   padding-left: 15px;
   padding-top: 10px; 
-  border: solid rgb(42, 41, 41) 2px;
+  /* border: solid rgb(42, 41, 41) 2px; */
+  border: none;
   margin-bottom: 0.5rem;
+}
+
+.info-form form fieldset input:focus:not(input:last-of-type){
+  outline: 1px solid hsl(246, 81%, 79%);
+  outline-offset: -1px;
 }
 
 .info-form form fieldset textarea {
   /* margin-top: 1rem; */
   resize: none;
+  border: none;
+}
+
+.info-form form fieldset textarea:focus {
+  outline: 1px solid hsl(246, 81%, 79%);
+  outline-offset: -1px;
 }
 
 .info-form form fieldset legend {
-  color: #fff;
+  color: #000;
+  font-size: 22px;
+  position: relative;
+  right: -95px;
+  font-weight: 300;
 }
 
 .info-form form label {
   /* display: none; */
-  color: #fff;
-  
+  color: #000;
+  font-weight: 300;
+}
+
+.info-form form label span {
+  /* color: #f8a39f;  */
+  font-size: 11px;
 }
 
 .info-form fieldset {
