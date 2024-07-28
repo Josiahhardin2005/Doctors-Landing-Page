@@ -186,7 +186,7 @@ body {
   border: solid 5px #fff;
   box-shadow: 9px 6px 6px -3px rgb(222, 240, 250);
   float: left;
-  height: 170px;
+  min-height: 170px;
   left: 2%;
   margin-left: 5rem;
   margin-top: 1rem;
@@ -428,36 +428,25 @@ body {
 
 .container {
   background-color: #0e60ed;
-  min-height: 300px;
-  display: flex;
+  min-height: 200px;
+  /* display: flex; */
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 0 3rem;
 }
 
-.footer address {
-  margin-left: 2rem;
-}
-
-.footer address a {
+.footer p:first-child {
   white-space: nowrap;
-  color: #060606;
-  text-decoration: none;
-}
-
-.footer address a:hover,
-.footer .footer-nav li a:hover{
-  border-bottom: 1px solid rgb(66, 63, 212); 
-  color: rgb(66, 63, 212); 
-  font-weight: 600;
-  letter-spacing: 0.5px; 
-  color: rgb(76, 73, 245);
-  transition: 0.3s;
+  margin-left: 0.7rem;
 }
 
 .footer .footer-nav {
+  grid-column-start: 2;
+  grid-row-start: 1;
   list-style: none;
   margin-left: 1rem;
 }
@@ -467,12 +456,20 @@ body {
   color: #000;
 }
 
+.footer .footer-nav li {
+  margin-bottom: 1rem;
+}
+
 .footer address span {
   letter-spacing: 1px;
 }
 
 .footer .social-links {
+  grid-column-start: 1;
+  grid-column-end: 3;
   list-style: none; 
+  position: relative;
+  top: -170px;
 }
 
 .footer .social-links li {
@@ -480,24 +477,66 @@ body {
 }
 
 .footer .social-links li a img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer .social-links li a img:hover {
   transition: 0.3s;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 
 .footer button {
-  border-radius: 3px;
-  height: 30px;
-  width: 210px; 
+  background: #003dbb;
+  background-color: #003dbb;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  height: 43px;
+  width: 172.6px; 
   white-space: nowrap;
+  grid-row-start: 1;
+  grid-column-start: 4;
 }
 
+.footer #copy {
+  grid-row-start: 2;
+  grid-column-start: 4;
+}
 
+.footer #health-part{
+  color: #003dbb;
+}
+
+.footer #first-part {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.footer #medical-center {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+  top: -8px;
+}
+
+.footer .credit {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  list-style: none;
+}
+
+.footer .credit li {
+  margin-bottom: 1rem;
+}
+
+.footer .credit li a {
+  color: #000;
+  text-decoration: none;
+}
 
 /* .footer-container {
   display: grid; 
