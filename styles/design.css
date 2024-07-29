@@ -36,13 +36,14 @@ body {
 }
 
 .header-container #health-part{
-  color: #003dbb;
+  color: #0021ba;
 }
 
 .header-container #first-part {
   font-size: 19px;
   font-weight: 600;
   margin-top: 0;
+  color: #000611;
 }
 
 .header-container #medical-center {
@@ -51,6 +52,7 @@ body {
   letter-spacing: 1px;
   position: relative;
   top: -8px;
+  color: #000611;
 }
 
 .nav-header ul{
@@ -70,6 +72,14 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.nav-header ul li a:hover {
+  color: #558ef9;
+  font-weight: 600;
+  border-bottom: 1px solid #558ef9; 
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .header-container button {
@@ -117,6 +127,7 @@ body {
   top: 0; 
   width: 100%; 
 }  
+
 
 .intro {
   display: flex;
@@ -427,9 +438,11 @@ body {
 /* Footer */
 
 .container {
-  background-color: #0e60ed;
-  min-height: 200px;
+  background-color: rgba(103, 170, 255, 1);
+  min-height: 195px;
+  margin-top: 4rem;
   /* display: flex; */
+  padding-top: 10px;
 }
 
 .footer {
@@ -441,7 +454,8 @@ body {
 
 .footer p:first-child {
   white-space: nowrap;
-  margin-left: 0.7rem;
+  margin-left: 1.3rem;
+  margin-top: 1rem;
 }
 
 .footer .footer-nav {
@@ -449,15 +463,28 @@ body {
   grid-row-start: 1;
   list-style: none;
   margin-left: 1rem;
+  margin-top: 1.2rem;
+  font-size: 15px;
+  
 }
 
 .footer .footer-nav li a {
   text-decoration: none; 
-  color: #000;
+  color: #000611;
+}
+
+.footer .footer-nav li a:hover,
+.footer .credit li a:hover {
+  border-bottom: 1px solid rgb(66, 63, 212); 
+  text-decoration: none; 
+  font-weight: 600;
+  letter-spacing: 0.5px; 
+  color: #16408f;
+  transition: 0.3s;
 }
 
 .footer .footer-nav li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .footer address span {
@@ -469,7 +496,8 @@ body {
   grid-column-end: 3;
   list-style: none; 
   position: relative;
-  top: -170px;
+  top: -105px; 
+  margin-left: 0.5rem;
 }
 
 .footer .social-links li {
@@ -498,43 +526,56 @@ body {
   white-space: nowrap;
   grid-row-start: 1;
   grid-column-start: 4;
+  margin-left: 15rem;
+  margin-top: 5rem; 
 }
 
 .footer #copy {
   grid-row-start: 2;
   grid-column-start: 4;
+  font-size: 14px; 
+  /* margin-bottom: 1200px; */
+  position: relative;
+  top: -42px;
+  color: #000611;
 }
 
 .footer #health-part{
-  color: #003dbb;
+  color: #0021ba;
 }
 
 .footer #first-part {
   font-size: 25px;
   font-weight: 600;
   margin-top: 0;
+  color: #000611;
 }
 
 .footer #medical-center {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
   position: relative;
   top: -8px;
+  right: -3.5px;
+  color: #000611;
 }
 
 .footer .credit {
   grid-column-start: 3;
   grid-row-start: 1;
   list-style: none;
+  margin-top: 2rem;
+  color: #fbfbfb;
 }
 
 .footer .credit li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 12px;
 }
 
 .footer .credit li a {
-  color: #000;
+  color: #000611;
   text-decoration: none;
 }
 
