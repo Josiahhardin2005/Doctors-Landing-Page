@@ -262,12 +262,12 @@ body {
 
 .info-form img {
   border-radius: 8px;
-  height: 615px;
+  max-height: 615px;
   margin-top: 1.2rem;
   margin-left: 2rem;
   position: relative;
   right: -81px;
-  width: 570px;
+  max-width: 570px;
 }
 
 .info-form p {
@@ -282,12 +282,12 @@ body {
   background-color: #eff4fd;
   border-radius: 7px;
   margin-top: 1rem;
-  height: 620px;
+  max-height: 620px;
   padding: 25px 35px;
   padding-bottom: 40px;
   position: relative;
   right: -210px;
-  width: 520px;
+  max-width: 520px;
 } 
 
 .info-form form fieldset input:last-child {
