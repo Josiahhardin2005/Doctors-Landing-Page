@@ -8,8 +8,6 @@
 }
 
 body {
-  /* width: 100%;
-  height: 100vh; */
   font-size: 16px;
 }
 
@@ -40,19 +38,20 @@ body {
 }
 
 .header-container #first-part {
-  font-size: 19px;
+  color: #000611;
+  font-size: 25px;
   font-weight: 600;
   margin-top: 0;
-  color: #000611;
 }
 
 .header-container #medical-center {
-  font-size: 13px;
+  color: #000611;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
+  margin-left: 0.2rem;
   position: relative;
   top: -8px;
-  color: #000611;
 }
 
 .nav-header ul{
@@ -67,7 +66,7 @@ body {
 
 .nav-header ul li a {
   color: #000611;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
@@ -75,9 +74,9 @@ body {
 }
 
 .nav-header ul li a:hover {
+  border-bottom: 1px solid #558ef9;
   color: #558ef9;
-  font-weight: 600;
-  border-bottom: 1px solid #558ef9; 
+  font-weight: 600; 
   text-decoration: none;
   transition: 0.3s;
 }
@@ -120,14 +119,13 @@ body {
 
 .background-img .content {
   background: rgb(0, 0, 0) ; 
-  background: rgba(87, 110, 238, 0.5);
+  background: rgba(87, 110, 238, 0.4);
   color: #f1f1f1; 
   min-height: 600px; 
   position: absolute; 
   top: 0; 
   width: 100%; 
 }  
-
 
 .intro {
   display: flex;
@@ -158,6 +156,7 @@ body {
 
 .intro-text p {
   color: #000611;
+  font-size: 18px;
   font-weight: 600;
   left: -5px;
   letter-spacing: 1px;
@@ -309,14 +308,13 @@ body {
 }
 
 .info-form form fieldset input {
-  /* margin-top: 1rem; */
-  border-radius: 5px;
-  padding: 10px;
-  padding-right: 185px; 
-  padding-left: 15px;
-  padding-top: 10px; 
   border: none;
+  border-radius: 5px;
   margin-bottom: 0.5rem;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 185px; 
+  padding-top: 10px; 
 }
 
 .info-form form fieldset input:focus:not(input:last-of-type){
@@ -438,48 +436,47 @@ body {
 /* Footer */
 
 .container {
-  background-color: rgba(103, 170, 255, 1);
-  min-height: 195px;
+  background-color: rgba(103, 170, 255, 0.7);
   margin-top: 4rem;
-  /* display: flex; */
+  min-height: 195px;
   padding-top: 10px;
 }
 
 .footer {
   display: grid;
+  gap: 0 3rem;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto;
-  gap: 0 3rem;
 }
 
 .footer p:first-child {
-  white-space: nowrap;
   margin-left: 1.3rem;
   margin-top: 1rem;
+  white-space: nowrap;
 }
 
 .footer .footer-nav {
-  grid-column-start: 2;
-  grid-row-start: 1;
   list-style: none;
   margin-left: 1rem;
   margin-top: 1.2rem;
   font-size: 15px;
-  
+  grid-column-start: 2;
+  grid-row-start: 1;
+  z-index: 2;
 }
 
 .footer .footer-nav li a {
-  text-decoration: none; 
   color: #000611;
+  text-decoration: none; 
 }
 
 .footer .footer-nav li a:hover,
 .footer .credit li a:hover {
-  border-bottom: 1px solid rgb(66, 63, 212); 
-  text-decoration: none; 
+  border-bottom: 1px solid rgb(66, 63, 212);
+  color: #16408f; 
   font-weight: 600;
+  text-decoration: none; 
   letter-spacing: 0.5px; 
-  color: #16408f;
   transition: 0.3s;
 }
 
@@ -492,12 +489,13 @@ body {
 }
 
 .footer .social-links {
-  grid-column-start: 1;
   grid-column-end: 3;
+  grid-column-start: 1;
   list-style: none; 
+  margin-left: 0.5rem;
   position: relative;
   top: -105px; 
-  margin-left: 0.5rem;
+  z-index: 1;
 }
 
 .footer .social-links li {
@@ -510,9 +508,9 @@ body {
 }
 
 .footer .social-links li a img:hover {
+  height: 45px;
   transition: 0.3s;
   width: 45px;
-  height: 45px;
 }
 
 .footer button {
@@ -520,58 +518,58 @@ body {
   background-color: #003dbb;
   border: none;
   color: #fff;
+  cursor: pointer;
   font-size: 15px;
-  height: 43px;
-  width: 172.6px; 
-  white-space: nowrap;
-  grid-row-start: 1;
   grid-column-start: 4;
+  grid-row-start: 1;
+  height: 43px;
   margin-left: 15rem;
   margin-top: 5rem; 
+  white-space: nowrap; 
+  width: 172.6px;
 }
 
 .footer #copy {
-  grid-row-start: 2;
-  grid-column-start: 4;
+  color: #000611;
   font-size: 14px; 
-  /* margin-bottom: 1200px; */
+  grid-column-start: 4;
+  grid-row-start: 2;
   position: relative;
   top: -42px;
-  color: #000611;
 }
 
-.footer #health-part{
+.footer #health {
   color: #0021ba;
 }
 
-.footer #first-part {
+.footer #first {
+  color: #000611;
   font-size: 25px;
   font-weight: 600;
   margin-top: 0;
-  color: #000611;
 }
 
-.footer #medical-center {
+.footer #med-cen {
+  color: #000611;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
   position: relative;
-  top: -8px;
   right: -3.5px;
-  color: #000611;
+  top: -8px;
 }
 
 .footer .credit {
+  color: #fbfbfb;
   grid-column-start: 3;
   grid-row-start: 1;
   list-style: none;
-  margin-top: 2rem;
-  color: #fbfbfb;
+  margin-top: 0.7rem;
 }
 
 .footer .credit li {
+  font-size: 11px;
   margin-bottom: 0.4rem;
-  font-size: 12px;
 }
 
 .footer .credit li a {
@@ -579,85 +577,5 @@ body {
   text-decoration: none;
 }
 
-/* .footer-container {
-  display: grid; 
-  grid-template-columns: fit-content(100%) 1fr fit-content(100%);
-  grid-template-rows: fit-content(100%) fit-content(100%);
-  gap: 1rem 2rem;
-  padding: 1rem 1rem;  
-  display: flex;
-  flex-direction: row; 
-  position: relative;
-  display: flex;
-  bottom: -300px;
-  background-color: #c8d4f7;
-  width: 100%;
-  white-space: nowrap;
-}
+/* Responsive Design */
 
-.footer address {
-  margin-left: 2rem;
-}
-
-.footer address a {
-  white-space: nowrap;
-  color: #060606;
-  text-decoration: none;
-}
-
-.footer address a:hover,
-.footer .footer-nav li a:hover{
-  border-bottom: 1px solid rgb(66, 63, 212); 
-  color: rgb(66, 63, 212); 
-  text-decoration: underline; 
-  font-weight: 600;
-  letter-spacing: 0.5px; 
-  color: rgb(76, 73, 245);
-  transition: 0.3s;
-}
-
-.footer address span {
-  color: #262525; 
-  letter-spacing: 1px;
-  font-size: 16px;
-}
-
-.footer .footer-nav {
-  list-style: none;
-  margin-left: 1rem;
-}
-
-.footer .footer-nav li a {
-  text-decoration: none; 
-  color: #000;
-}
-
-.footer-container .footer-nav li {
-  margin-bottom: 1rem;
-}
-
-.footer .social-links {
-  list-style: none;
-  position: relative;
-  left: -100px; 
-}
-
-.footer .social-links li {
-  display: inline;
-}
-
-.footer .social-links li a img {
-  width: 50px;
-  height: 50px;
-}
-
-.footer .social-links li a img:hover {
-  transition: 0.3s;
-  width: 60px;
-  height: 60px;
-}
-
-.footer-container #copy {
-  position: relative;
-  bottom: -200px;
-} */
