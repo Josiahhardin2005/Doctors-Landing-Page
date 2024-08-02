@@ -9,6 +9,11 @@
 
 body {
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+.webpage {
+  max-width: 100%;
 }
 
 /* Wrapper */
@@ -22,9 +27,9 @@ body {
 /* Navbar */
 
 .header-container {
-  align-items: center;
+  align-items: center; 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .header-container p {
@@ -57,7 +62,9 @@ body {
 .nav-header ul{
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 3rem; 
+  margin-right: 1.5rem;
+  margin-top: 10px;
 }
 
 .nav-header ul li {
@@ -66,7 +73,7 @@ body {
 
 .nav-header ul li a {
   color: #000611;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
@@ -85,11 +92,24 @@ body {
   background: #003dbb;
   background-color: #003dbb;
   border: solid 2px #003dbb;
-  border-width: 8px;
+  /* border-width: 8px; */
   color: #fff;
-  font-size: 15px;
-  margin-right: 10px;
+  display: flex;
+  font-size: 16px;
+  /* margin-right: 0.5rem; */
+  position: relative;
+  top: -2px;
   white-space: nowrap;
+  border-width: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+}
+
+.right-nav {
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 10px;
 }
 
 .header-container button:hover {
@@ -139,7 +159,6 @@ body {
   margin-top: 2rem;
   position: relative;
   text-align: center;
-  white-space: nowrap;
 }
 
 .intro-text h1 {
@@ -156,7 +175,8 @@ body {
 
 .intro-text p {
   color: #000611;
-  font-size: 18px;
+  flex-wrap: wrap;
+  font-size: 16px;
   font-weight: 600;
   left: -5px;
   letter-spacing: 1px;
@@ -262,12 +282,14 @@ body {
 
 .info-form img {
   border-radius: 8px;
-  max-height: 615px;
+  /* max-height: 615px; */
   margin-top: 1.2rem;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   position: relative;
-  right: -81px;
-  max-width: 570px;
+  right: -65px;
+  /* max-width: 570px; */
+  width: 78vh;
+  height: 78vh;
 }
 
 .info-form p {
@@ -286,7 +308,7 @@ body {
   padding: 25px 35px;
   padding-bottom: 40px;
   position: relative;
-  right: -210px;
+  right: -170px;
   max-width: 520px;
 } 
 
@@ -458,6 +480,8 @@ body {
   gap: 0 3rem;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto;
+  padding-left: 40px;
+  padding-top: 15px;
 }
 
 .footer p:first-child {

@@ -9,174 +9,178 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="background-img">
-        <div class="content">
-          <header role="banner">
-            <div class="header-container">
-              <p><span id="first-part"><span id="health-part">Health</span>Care</span> <br> <span id="medical-center">Medical Center</span></p>
+    <div class="webpage">
+      <div class="wrapper">
+        <div class="background-img">
+          <div class="content">
+            <header role="banner">
+              <div class="header-container">
+                <p><span id="first-part"><span id="health-part">Health</span>Care</span> <br> <span id="medical-center">Medical Center</span></p>
 
-              <nav class="nav-header">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="">Contact Us</a></li>
-                  <li><a href="#">Doctors</a></li>
-                  <li><a href="#">Reviews</a></li>
-                </ul>
-              </nav>
-              <button>Make Appointment</button>
+                <div class="right-nav">
+                  <nav class="nav-header">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="">Contact Us</a></li>
+                      <li><a href="#">Doctors</a></li>
+                      <li><a href="#">Reviews</a></li>
+                    </ul>
+                  </nav>
+                  <button>Make Appointment</button>
+                </div>
+              </div>
+            </header>
+
+
+
+            <div class="intro">
+              <section>
+                <div class="intro-text">
+                  <h1>Leading the way in <br> <span>Medical healthcare</span></h1>
+
+                  <p>So feel been kept be at gate. Be september it extensive oh concluded of certainty. <br> In read most gate at body held it ever no. Talking justice welcome message inquiry in started of am me.</p>
+
+                  <button>visit a doctor</button>
+                  <button>more info</button>
+                </div>
+              </section>
             </div>
-          </header>
+          </div>
+        </div>
 
-
-
-          <div class="intro">
+        <main>
+          <div class="our-advantages">
             <section>
-              <div class="intro-text">
-                <h1>Leading the way in <br> <span>Medical healthcare</span></h1>
+              <p>Our Advantages</p>
+              <h2>Why choose Healthcare Clinic?</h2>
 
-                <p>So feel been kept be at gate. Be september it extensive oh concluded of certainty. <br> In read most gate at body held it ever no. Talking justice welcome message inquiry in started of am me.</p>
+              <div class="boxes">
+                <img src="../images/health.png" alt="A smiling child's head on top of a bandage." width="512" height="512">
+                <p>We are ready 24/7</p>
+                <p>You can be sure that Healthcare <br>is ready to provide expert</p>
+              </div>
 
-                <button>visit a doctor</button>
-                <button>more info</button>
+              <div class="boxes">
+                <img src="../images/heart-hands.png" alt="A heart with a plus sign inside it, hovering above two hands." width="512" height="512">
+                <p>Full cycle of medical care</p>
+                <p>Healthcare cares about <br>patients from birth to old age</p>
+              </div>
+
+              <div class="boxes">
+                <img src="../images/hospital.png" alt="A hospital" width="512" height="512">
+                <p>Quality control</p>
+                <p>The work standard of Healthcare<br> is strict quality control of medical care</p>
+              </div>
+
+              <div class="boxes">
+                <img src="../images/../images/stethoscope.png" alt="A stethoscope" width="512" height="512">
+                <p>Traditions and standards</p>
+                <p>30 years ago Healthcare was<br>created by two doctors<br> Igor Vandovich and Shurkin</p>
               </div>
             </section>
           </div>
-        </div>
-      </div>
 
-      <main>
-        <div class="our-advantages">
+
           <section>
-            <p>Our Advantages</p>
-            <h2>Why choose Healthcare Clinic?</h2>
-
-            <div class="boxes">
-              <img src="../images/health.png" alt="A smiling child's head on top of a bandage." width="512" height="512">
-              <p>We are ready 24/7</p>
-              <p>You can be sure that Healthcare <br>is ready to provide expert</p>
+            <div class="form-section">
+              <p>dolor sit </p>
+              <h2>Heading</h2>
             </div>
 
-            <div class="boxes">
-              <img src="../images/heart-hands.png" alt="A heart with a plus sign inside it, hovering above two hands." width="512" height="512">
-              <p>Full cycle of medical care</p>
-              <p>Healthcare cares about <br>patients from birth to old age</p>
-            </div>
+            <div class="info-form">
+              <img src="../images/create-an-image-eed801dd-bc19-4654-b00e-7820841179a8.png" alt="A group of healthcare physicians smiling while looking toward us." width="1366" height="768">
+              <form id="appointmentForm">
+                <fieldset>
+                  <legend>Make an appointment</legend>
+                  <p>Fill out your contact information in the form below and our administrator will contact you. inputs with an * are required</p>
 
-            <div class="boxes">
-              <img src="../images/hospital.png" alt="A hospital" width="512" height="512">
-              <p>Quality control</p>
-              <p>The work standard of Healthcare<br> is strict quality control of medical care</p>
-            </div>
-
-            <div class="boxes">
-              <img src="../images/../images/stethoscope.png" alt="A stethoscope" width="512" height="512">
-              <p>Traditions and standards</p>
-              <p>30 years ago Healthcare was<br>created by two doctors<br> Igor Vandovich and Shurkin</p>
+                  <label for="fname">First Name <span>*</span></label>
+                  <input type="text" id="fname" name="fname" required placeholder="">
+                  <label for="lname">Last Name <span>*</span></label>
+                  <input type="text" id="lname" name="lname" required placeholder="">
+                  <label for="phone">Phone Number <span>*</span></label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="">
+                  <label for="email">Email Address <span>*</span></label>
+                  <input type="email" id="email" name="email" required placeholder="">
+                  <label for="message">Enter Message</label>
+                  <textarea name="message" id="message" cols="31" rows="4" placeholder=""></textarea>
+                  <input type="submit" value="Submit">
+                </fieldset>
+              </form>
             </div>
           </section>
-        </div>
 
-
-        <section>
-          <div class="form-section">
-            <p>dolor sit </p>
-            <h2>Heading</h2>
-          </div>
-
-          <div class="info-form">
-            <img src="../images/create-an-image-eed801dd-bc19-4654-b00e-7820841179a8.png" alt="A group of healthcare physicians smiling while looking toward us." width="1366" height="768">
-            <form id="appointmentForm">
-              <fieldset>
-                <legend>Make an appointment</legend>
-                <p>Fill out your contact information in the form below and our administrator will contact you. inputs with an * are required</p>
-
-                <label for="fname">First Name <span>*</span></label>
-                <input type="text" id="fname" name="fname" required placeholder="">
-                <label for="lname">Last Name <span>*</span></label>
-                <input type="text" id="lname" name="lname" required placeholder="">
-                <label for="phone">Phone Number <span>*</span></label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="">
-                <label for="email">Email Address <span>*</span></label>
-                <input type="email" id="email" name="email" required placeholder="">
-                <label for="message">Enter Message</label>
-                <textarea name="message" id="message" cols="31" rows="4" placeholder=""></textarea>
-                <input type="submit" value="Submit">
-              </fieldset>
-            </form>
-          </div>
-        </section>
-
-        <section>
-          <div class="faq-heading">
-            <p>Frequently Asked Questions</p>
-          </div>
-          <div class="accordion">
-            <h3>FAQs</h3>
-            <p class="accordion-que">Lorem ipsum</p>
-            <div class="panel">
-              <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <section>
+            <div class="faq-heading">
+              <p>Frequently Asked Questions</p>
             </div>
-            <p class="accordion-que">Lorem ipsum</p>
-            <div class="panel">
-              <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="accordion">
+              <h3>FAQs</h3>
+              <p class="accordion-que">Lorem ipsum</p>
+              <div class="panel">
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <p class="accordion-que">Lorem ipsum</p>
+              <div class="panel">
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <p class="accordion-que">Lorem ipsum</p>
+              <div class="panel">
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <p class="accordion-que">Lorem ipsum</p>
+              <div class="panel">
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
             </div>
-            <p class="accordion-que">Lorem ipsum</p>
-            <div class="panel">
-              <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <p class="accordion-que">Lorem ipsum</p>
-            <div class="panel">
-              <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </section>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="container">
+            <div class="footer">
+
+              <p><span id="first"><span id="health">Health</span>Care</span> <br> <span id="med-cen">Medical Center</span></p>
+
+              <ul class="social-links">
+                <li><a href="#"><img src="../images/facebook.png" alt="Link to Facebook" width="2000" height="2000"></a></li>
+                <li><a href="#"><img src="../images/linkedin.png" alt="Link to LinkedIn" width="2000" height="2000"></a></li>
+                <li><a href="#"><img src="../images/X.png" alt="Link to X" width="2000" height="2000"></a></li>
+                <li><a href="#"><img src="../images/youtube.png" alt="Link to Youtube" width="2000" height="2000"></a></li>
+              </ul>
+
+              <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
+              <ul class="credit">
+                <li><a href="https://www.flaticon.com/free-icons/healthcare" title="healthcare icons">Heart in Hands icon created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/healthcare-and-medical" title="healthcare and medical icons">Bandage icon created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/doctor" title="doctor icons">Stethoscope icon created by srip - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/hospital" title="hospital icons">Hospital icon created by Yogi Aprelliyanto - Flaticon</a></li>
+                <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150897945.htm">Youtube Logo Image designed by Freepik</a>
+                </li>
+                <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150898106.htm">LinkedIn Logo Image designed by Freepik</a>
+                </li>
+                <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150898076.htm">X Logo Image designed by Freepik</a>
+                </li>
+                <li><a href="https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US&_gl=1*15ersbs*_gcl_aw*R0NMLjE3MjA0NTkxMjEuQ2p3S0NBanduSzYwQmhBOUVpd0FtcEhadzhlMmd0WHpFRlYxVmhLY1pEa3lzSVZRNGxwR2M2bmlzdGZCNXN1Z0EyUHE2R1FxcE9LanN4b0NBNUFRQXZEX0J3RQ..*_gcl_au*MTc2MDcxMjE5NC4xNzIwNDUyNDkz*_ga*ODUyNTM5MjA3LjE3MjA0NTI0OTQ.*_ga_18B6QPTJPC*MTcyMTg1MDk3My41LjEuMTcyMTg1MTA2Mi40Ny4wLjA.*_ga_QWX66025LC*MTcyMTg1MDk3MC41LjEuMTcyMTg1MTA2Mi40OC4wLjA.*_ga_Q29FZ8F7H4*MTcyMTg1MDk3My41LjEuMTcyMTg1MTA2Mi4wLjAuMA..">Facebook Logo Image designed by Freepik</a>
+                </li>
+              </ul>
+
+              <button>Make Appointment</button>
+              <p id="copy">&copy;Healthcare Services and/or its affiliates. All rights reserved</p>
             </div>
           </div>
-        </section>
-      </main>
-
-      <footer role="contentinfo">
-        <div class="container">
-          <div class="footer">
-
-            <p><span id="first"><span id="health">Health</span>Care</span> <br> <span id="med-cen">Medical Center</span></p>
-
-            <ul class="social-links">
-              <li><a href="#"><img src="../images/facebook.png" alt="Link to Facebook" width="2000" height="2000"></a></li>
-              <li><a href="#"><img src="../images/linkedin.png" alt="Link to LinkedIn" width="2000" height="2000"></a></li>
-              <li><a href="#"><img src="../images/X.png" alt="Link to X" width="2000" height="2000"></a></li>
-              <li><a href="#"><img src="../images/youtube.png" alt="Link to Youtube" width="2000" height="2000"></a></li>
-            </ul>
-
-            <ul class="footer-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Doctors</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-
-            <ul class="credit">
-              <li><a href="https://www.flaticon.com/free-icons/healthcare" title="healthcare icons">Heart in Hands icon created by Freepik - Flaticon</a></li>
-              <li><a href="https://www.flaticon.com/free-icons/healthcare-and-medical" title="healthcare and medical icons">Bandage icon created by Freepik - Flaticon</a></li>
-              <li><a href="https://www.flaticon.com/free-icons/doctor" title="doctor icons">Stethoscope icon created by srip - Flaticon</a></li>
-              <li><a href="https://www.flaticon.com/free-icons/hospital" title="hospital icons">Hospital icon created by Yogi Aprelliyanto - Flaticon</a></li>
-              <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150897945.htm">Youtube Logo Image designed by Freepik</a>
-              </li>
-              <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150898106.htm">LinkedIn Logo Image designed by Freepik</a>
-              </li>
-              <li><a href="https://www.freepik.com/free-psd/social-media-logo-design_150898076.htm">X Logo Image designed by Freepik</a>
-              </li>
-              <li><a href="https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US&_gl=1*15ersbs*_gcl_aw*R0NMLjE3MjA0NTkxMjEuQ2p3S0NBanduSzYwQmhBOUVpd0FtcEhadzhlMmd0WHpFRlYxVmhLY1pEa3lzSVZRNGxwR2M2bmlzdGZCNXN1Z0EyUHE2R1FxcE9LanN4b0NBNUFRQXZEX0J3RQ..*_gcl_au*MTc2MDcxMjE5NC4xNzIwNDUyNDkz*_ga*ODUyNTM5MjA3LjE3MjA0NTI0OTQ.*_ga_18B6QPTJPC*MTcyMTg1MDk3My41LjEuMTcyMTg1MTA2Mi40Ny4wLjA.*_ga_QWX66025LC*MTcyMTg1MDk3MC41LjEuMTcyMTg1MTA2Mi40OC4wLjA.*_ga_Q29FZ8F7H4*MTcyMTg1MDk3My41LjEuMTcyMTg1MTA2Mi4wLjAuMA..">Facebook Logo Image designed by Freepik</a>
-              </li>
-            </ul>
-
-            <button>Make Appointment</button>
-            <p id="copy">&copy;Healthcare Services and/or its affiliates. All rights reserved</p>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
 
     <script src="../scripts/scripts.js"></script>
