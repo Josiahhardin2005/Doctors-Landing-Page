@@ -397,13 +397,14 @@ body {
   min-height: 328px;
   padding-left: 1rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   position: relative;
   right: -500px;
 }
 
 .panel {
   background-color: #fff;
-  display: none;
+  display: none; 
   overflow: hidden;
   padding: 0 18px;
 }
@@ -415,11 +416,15 @@ body {
   cursor: pointer;
   display: flex;
   height: 57px;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   padding: 17px 40px 40px 30px;
   text-align: center;
   transition: 0.4s;
   width: 480px;  
+}
+
+.accordion-que.active {
+  margin-bottom: 0;
 }
 
 .accordion-que:hover {
@@ -429,15 +434,21 @@ body {
   letter-spacing: 0.5px;
 } 
 
-.active {
-  background-color: #c2d2f1;
-}
+.panel.active {
+  /* background-color: #c2d2f1;  */
+  display: block;
+  font-size: 14px;
+  padding-left: 30px;
+  padding-bottom: 17px;
+  margin-bottom: 2px;
+  width: 480px;
+} 
 
 /* Footer */
 
 .container {
   background-color: rgba(103, 170, 255, 0.7);
-  margin-top: 4rem;
+  margin-top: 3rem;
   min-height: 195px;
   padding-top: 10px;
 }
