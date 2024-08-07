@@ -63,7 +63,7 @@ body {
 .nav-header ul{
   display: flex;
   flex-direction: row;
-  gap: 3rem; 
+  gap: 3vw; 
   margin-right: 1.5rem;
   margin-top: 10px;
 }
@@ -75,7 +75,7 @@ body {
 .nav-header ul li a {
   color: #000611;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.5vw;
   letter-spacing: 1px;
   text-decoration: none;
   white-space: nowrap;
@@ -222,17 +222,24 @@ body {
 }
 
 .boxes-container {
-  padding-left: 75px;
+  /* margin-left: 9vw; */
+  position: relative;
+  /* margin-left: 11vw;  */
+  margin-right: 2vw;
+  text-align: center;
+  display: inline-block;
 }
 
 .boxes {
   border: solid 5px #fff;
   box-shadow: 9px 6px 6px -3px rgb(222, 240, 250);
-  float: left;   
+  float: right;  
   min-height: 170px;
-  margin-left: 4rem;  
+  margin-left: 2vw;  
   margin-top: 1rem;
-  width: 227.13px;
+  /* width: 227.13px; */
+  max-width: 227.13px;
+  width: 20vw;
 }
 
 
@@ -255,7 +262,7 @@ body {
 
 .boxes p:nth-child(3) {
   color: #737070;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 300;
 }
 
@@ -287,9 +294,9 @@ body {
 /* form styling */
 
 .info-form {
-  display: flex;
+  display: flex; 
   margin-bottom: 3rem;
-  position: relative;
+  justify-content: center;
 }
 
 
@@ -297,12 +304,15 @@ body {
   border-radius: 8px;
   max-height: 615px; 
   margin-top: 1.2rem;
-  margin-left: 0.5rem;
-  position: relative;
+  margin-right: 3vw;
+  margin-left: 1vw;
+  /* margin-left: 3vw;  */
+  /* position: relative; 
+ /* left: -15px; */
   /* right: -40px;    */
-  left: 4%;
+  /* left: 4%; */
   /* max-width: 570px;  */
-  width: 78vh; 
+  width: 480px; 
   /* height: 78vh; */
 }
 
@@ -318,13 +328,14 @@ body {
   background-color: #eff4fd;
   border-radius: 7px;
   margin-top: 1rem;
+  /* margin-right: 10vw; */
   max-height: 620px;
   padding: 25px 35px;
   padding-bottom: 40px;
-  position: absolute;
+  /* position: relative; */
   /* right: -170px;   */
-  right: 100px;
-  max-width: 520px;  
+  /* right: -140px; */
+  width: 480px;  
 } 
 
 .info-form form fieldset input:last-child {
@@ -338,10 +349,11 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 1rem;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px;
   padding-left: 190px;
   padding-right: 171px;
-  padding-top: 8px;
+  padding-top: 8px; */
+  width: 100%;
 }
 
 .info-form form fieldset input {
@@ -349,12 +361,13 @@ body {
   border-radius: 5px;
   margin-bottom: 0.5rem;
   padding: 10px;
-  padding-left: 15px;
+  /* padding-left: 15px;
   padding-right: 185px; 
-  padding-top: 10px; 
+  padding-top: 10px;  */
+  width: 100%;
 }
 
-.info-form form fieldset input:focus:not(input:last-of-type){
+.info-form form fieldset input:focus:not(input:last-of-type) {
   outline: 1px solid hsl(246, 81%, 79%);
   outline-offset: -1px;
 }
@@ -362,6 +375,7 @@ body {
 .info-form form fieldset textarea {
   border: none;
   resize: none;
+  width: 100%;
 }
 
 .info-form form fieldset textarea:focus {
@@ -370,11 +384,11 @@ body {
 }
 
 .info-form form fieldset legend {
+  /* display: flex; */
   color: #000;
   font-size: 22px;
   font-weight: 300;
-  position: relative;
-  right: -95px;
+  margin-left: 8.2vw;
 }
 
 .info-form form label {
@@ -392,7 +406,7 @@ body {
 
 .form-section {
   position: relative;
-  right: -10px; 
+  /* right: -10px;  */
   text-align: center;
 }
 
@@ -409,21 +423,21 @@ body {
   font-weight: 400;
 }
 
-.form-section p:first-of-type,
-.form-section h2:first-of-type {
-  position: relative;
-  left: 0.2%;
-}
-
 /* Accordion */
+
+.faq {
+  /* text-align: center; */
+  justify-content: center;
+  display: grid;
+}
 
 .faq-heading {
   font-size: 25px;
   margin-bottom: 1rem;
-  position: relative;
+  /* position: relative; */
   /* right: -40px; */
   /* left: 0.5%;  */
-  text-align: center;
+  text-align: center; 
 }
 
 .accordion h3 {
@@ -435,15 +449,15 @@ body {
 }
 
 .accordion {
-  align-content: center;
   background-color:#77a4ff;
   max-width: 520px;
   min-height: 328px;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: relative;
-  right: -460px;  
+  padding-right: 1rem;
+  /* position: relative;
+  right: -460px;   */
   /* right: 40px; */ 
 }
 
@@ -637,7 +651,7 @@ body {
 
 /* Responsive Design */
 
-@media only screen and (min-width: 768px) and (max-width: 1199px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
   /* Nav-bar */
   .right-nav ul {
     display: none;
@@ -655,10 +669,15 @@ body {
 
   /* Boxes */
   
+  .boxes-container {
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+  }
 
   .boxes {
     width: 180px;
-    margin-left: 5vw;
+    margin-left: 1vw; 
+ 
   }
 
   .boxes p:nth-child(2) {
@@ -677,4 +696,29 @@ body {
     position: static;
   }
 
+  /* Form */
+  .info-form img {
+    /* max-height: 620px;
+    max-width: 480px;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    width: 450px; */
+    display: none;  
+  }
+
+  .info-form form {
+    /* max-height: 750px;
+    max-width: 420px;
+    height: 620px;
+    width: 480px;
+    min-height: 620px; */
+  }
+
+  .info-form form fieldset legend {
+    /* text-align: center; */
+    /* margin-left: 5vw; */
+    /* position: unset;
+    align-content: center; */
+  }
+  
 }
