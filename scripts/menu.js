@@ -14,20 +14,3 @@ function menuClick() {
     }
   }
 
-// document.addEventListener('click', e => {
-//   if (dropdown.contains(e.target)) {
-//     menu.classList.remove("show");
-//   }
-// })
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropBtn')) {
-//     let i;
-//     for (i = 0; i > dropdown.length; i++) {
-//       let openDropdown = dropdown[i];
-//       if (openDropdown.classList.contains('show')) {
-//         (openDropdown.classList.remove('show'));
-//       }
-//     }
-//   }
-// }
-
